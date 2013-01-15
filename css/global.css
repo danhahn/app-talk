@@ -1,8 +1,10 @@
 @import "reset.css";
+
+@import url(http://fonts.googleapis.com/css?family=Electrolize);
 html,
 body {
   background-color: #c0c0c0;
-  font: 12px arial;
+  font: 12px "helvetica neue";
   color: #333333;
 }
 .site {
@@ -10,4 +12,64 @@ body {
   background-color: #fff;
   margin: 20px auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.site header {
+  border-bottom: 2px solid #333333;
+}
+.site header h1 {
+  color: #f79521;
+  font: 30px 'Electrolize', sans-serif;
+  padding: 15px 10px;
+}
+.site .content {
+  padding: 15px 10px;
+}
+.site .content h2 {
+  font-size: 30px;
+}
+.site .content h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #f79521;
+}
+.site .content ul.homepage {
+  padding: 0 20px;
+}
+.site .content ul.homepage li {
+  list-style: disc;
+}
+.site .content ul.homepage li a {
+  color: #7b4404;
+  text-decoration: none;
+  font-size: 20px;
+}
+.site .content ul.homepage li a:hover {
+  text-decoration: underline;
+}
+.site .content > p {
+  margin: 10px 0;
+  line-height: 1.5em;
+  text-align: justify;
+}
+.site .footer {
+  padding: 15px 10px;
+  border-top: 1px solid #333333;
+  font-weight: bold;
+}
+.photo {
+  border: 1px solid #747474;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #c0c0c0;
+  text-align: center;
+  margin-top: 10px;
+}
+.photo > p {
+  margin: 10px 0 0;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+}
+.photo img {
+  display: inline-block;
 }

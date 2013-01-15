@@ -1,6 +1,11 @@
 @import "reset.css";
+@import url(http://fonts.googleapis.com/css?family=Electrolize);
+
+@header: 'Electrolize', sans-serif;
 
 @bg-site: #c0c0c0;
+@orange: #F79521;
+
 @text-color: lighten(black, 20%);
 
 @width: 1000px;
@@ -13,7 +18,7 @@
 
 html,body {
 	background-color: @bg-site;	
-	font: 12px arial;
+	font: 12px "helvetica neue";
 	color: @text-color;
 }
 
@@ -22,4 +27,69 @@ html,body {
 	background-color: #fff;
 	margin: @spacing*4 auto;
 	.drop-shadow;
+	header {
+		border-bottom: 2px solid @text-color;
+		h1 {
+			color: @orange;
+			font: 30px @header;
+			padding: @spacing*3 @spacing*2;
+		}
+	}
+	.content {
+		padding: @spacing*3 @spacing*2;
+		h2 {
+			font-size: 30px;
+		}
+
+		h3 {
+			font-size: 20px;
+			text-transform: uppercase;
+			color: @orange;
+		}
+
+		ul.homepage {
+			padding: 0 @spacing*4;
+			li {
+				list-style: disc;
+				a {
+					color: darken(@orange, 30%);
+					text-decoration: none;
+					font-size: 20px;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+
+		&> p {
+			margin: @spacing*2 0;
+			line-height: 1.5em;
+			text-align: justify;
+		}
+	}
+	.footer {
+		padding: @spacing*3 @spacing*2;
+		border-top: 1px solid @text-color;
+		font-weight: bold;
+	}
+}
+
+.photo {
+	border: 1px solid darken(@bg-site, 30%);
+	padding: @spacing*2;
+	border-radius: @spacing*2;
+	background-color: @bg-site;
+	text-align: center;
+	margin-top: @spacing*2;
+	&> p {
+		margin: 10px 0 0;
+		font-size: 1.3em;
+		font-weight: bold;
+		text-align: center;
+	}
+	img {
+		display: inline-block;
+
+	}
 }
