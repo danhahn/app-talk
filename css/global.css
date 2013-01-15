@@ -1,0 +1,13 @@
+@import "reset.css";
+html,
+body {
+  background-color: #c0c0c0;
+  font: 12px arial;
+  color: #333333;
+}
+.site {
+  width: 1000px;
+  background-color: #fff;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
