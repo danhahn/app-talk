@@ -4,7 +4,7 @@
 html,
 body {
   background-color: #c0c0c0;
-  font: 12px "helvetica neue";
+  font: 15px "helvetica neue";
   color: #333333;
 }
 .site {
@@ -15,11 +15,33 @@ body {
 }
 .site header {
   border-bottom: 2px solid #333333;
+  background: #f79521;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(top, #f79521 0%, #7b4404 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f79521), color-stop(100%, #7b4404));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #f79521 0%, #7b4404 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #f79521 0%, #7b4404 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #f79521 0%, #7b4404 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #f79521 0%, #7b4404 100%);
+  /* W3C */
+
 }
 .site header h1 {
-  color: #f79521;
-  font: 30px 'Electrolize', sans-serif;
+  color: #ffffff;
+  font: bold 30px 'Electrolize', sans-serif;
   padding: 15px 10px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 .site .content {
   padding: 15px 10px;

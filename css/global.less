@@ -16,9 +16,19 @@
     box-shadow: @drop @color;
 }
 
+.standard-gradient(@start: @orange, @stop: darken(@orange, 30%)) {
+	background: @start; /* Old browsers */
+	background: -moz-linear-gradient(top,  @start 0%, @stop 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@start), color-stop(100%,@stop)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  @start 0%,@stop 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  @start 0%,@stop 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  @start 0%,@stop 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  @start 0%,@stop 100%); /* W3C */
+}
+
 html,body {
 	background-color: @bg-site;	
-	font: 12px "helvetica neue";
+	font: 15px "helvetica neue";
 	color: @text-color;
 }
 
@@ -30,10 +40,12 @@ html,body {
 	header {
 		border-bottom: 2px solid @text-color;
 		h1 {
-			color: @orange;
-			font: 30px @header;
+			color: #ffffff;
+			font: bold 30px @header;
 			padding: @spacing*3 @spacing*2;
+			text-shadow: 0 1px 0 rgba(0,0,0,.5);
 		}
+		.standard-gradient;
 	}
 	.content {
 		padding: @spacing*3 @spacing*2;
