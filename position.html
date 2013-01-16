@@ -7,6 +7,10 @@
 
 	<style type="text/css">
 
+		.content {
+			height: 1000px;
+		}
+
 		.content > div {
 			border: 1px solid #c0c0c0;
 			background-color: #e2d5b2;
@@ -14,19 +18,32 @@
 		}
 
 		.static {
-
+			position: static;
+			top: 10px;
+			left: 10px;
+			/* note this has no effect*/
 		}
 
 		.relative {
-
+			position: relative;
+			top: 10px;
+			left: 10px;
+			/* note the element moves from its orginal position */
 		}
 
 		.absolute {
-
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			/* note that it moves to the to left postion */
 		}
 
 		.fixed {
-
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			/* note this element will not move when the page scrolls */
 		}
 
 	</style>

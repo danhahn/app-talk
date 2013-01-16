@@ -9,9 +9,20 @@
 
 		.photo {
 			padding: 30px;
+			/* float all the photo */
+			float: left;
+			margin-right: 45px;
+			margin-bottom: 40px;
+		}
+
+		/* set the margin of every 4th element to 0 */
+		.photo:nth-of-type(4n) {
+			margin-right: 0;
 		}
 
 		.footer {
+			/*  clear the foooter to pin ot the bottom */
+			clear: both;
 			background-color: red;
 		}
 
@@ -36,7 +47,7 @@
 			<p>Hahn Logo</p>
 		</div>
 
-		<!--<div class="photo left">
+		<div class="photo left">
 			<img src="images/hahn.jpg" alt="">
 			<p>Hahn Logo</p>
 		</div>
@@ -69,7 +80,7 @@
 		<div class="photo left">
 			<img src="images/hahn.jpg" alt="">
 			<p>Hahn Logo</p>
-		</div>-->
+		</div>
 
 	</div>
 	<footer class="footer">

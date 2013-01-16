@@ -9,7 +9,7 @@
 	<style type="text/css">
 
 		#wrapper {
-			width: auto;
+			width: 800px;
 			margin: 0 auto;
 			background-color: #d3c49d;
 		}
@@ -22,12 +22,22 @@
 			color: #ffffff;
 		}
 
+		#global-nav, #content {
+			float: left;
+		}
+
 		#global-nav {
 			background-color: #c9001f;
+			width: 200px;
+			height: 200px;
+			/* note you should not set a height on a element.  Let the content for the height .*/
 		}
 
 		#content {
 			background-color: #eff0e8;
+			width: 600px;
+			height: 600px;
+			/* note you should not set a height on a element.  Let the content for the height .*/
 		}
 
 		#footer {
@@ -35,6 +45,7 @@
 			background-color: #040404;
 			color: #ffffff;
 			padding: 10px 20px;
+			clear: both;
 		}
 
 	</style>

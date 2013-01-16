@@ -13,11 +13,20 @@
 			padding: 20px;
 		}
 
+		.parent {
+			position: relative;
+		}
+
+		/* note the parent is relative so the child no is limited to the parents edge. */
+
 		.child {
 			background-color: #316d17;
 			color: #fff;
 			border: 1px solid #fff;
 			padding: 10px;
+			position: absolute;
+			top: 0;
+			right: 0;
 		}
 
 	</style>

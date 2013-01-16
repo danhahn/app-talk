@@ -4,7 +4,7 @@
 html,
 body {
   background-color: #c0c0c0;
-  font: 15px "helvetica neue";
+  font: 15px "helvetica neue", arial;
   color: #333333;
 }
 .site {
